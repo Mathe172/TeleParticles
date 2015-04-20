@@ -1,0 +1,25 @@
+main: mathe172.minecraft.plugins.TeleParticles.TeleParticles
+name: TeleParticles
+version: 1.8
+author: Mathe172
+description: Particles and sounds when a player is teleported
+softdepend: [PossessEm, VanishNoPacket]
+permissions:
+  teleparticles.sounds:
+    description: Enables sound when teleporting.
+    default: op
+  teleparticles.particles:
+    description: Enables teleport particles.
+    default: op
+  teleparticles.reload:
+    description: Allows the player to reload the config
+    default: op
+  teleparticles.readmodify:
+    description: Allows the player to read and modify any settings using the commands
+    default: op
+commands:
+  teleParticles:
+    description: TeleParticles command
+    aliases: [teleP, tParticles]
+    usage: |
+           /<command> For help

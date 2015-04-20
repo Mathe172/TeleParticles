@@ -1,0 +1,31 @@
+﻿Additionally you can edit the Config. An Example of a Config File is below.</p>
+<h2>Example config</h2>
+<code>
+maxDelay: 50<br>
+minParticleDistance: 5<br>
+minSoundDistance: 0<br>
+commands:<br>
+- command: spawn<br>
+&nbsp;&nbsp;argRegex: ''<br>
+&nbsp;&nbsp;spawnParticles: -1<br>
+&nbsp;&nbsp;playSound: 1<br>
+- command: home<br>
+&nbsp;&nbsp;spawnParticles: 0<br>
+- command: warp<br>
+&nbsp;&nbsp;argRegex: 'Special'<br>
+- command: warp<br>
+&nbsp;&nbsp;argRegex: 'Normal'<br>
+&nbsp;&nbsp;playSound: 0<br>
+<br>
+#Do NOT change this or your config is destroyed!<br>
+version: 3<br>
+#Do NOT change this or your config is destroyed!
+</code><br><br>
+This config will do the following:
+<ul>
+<li>Only spawn particles if the player teleported more than 5 blocks</li>
+<li>Play sound if player uses '/spawn' (without any arguments), particles are never spawned (even for ops)</li>
+<li>Play sound if player uses '/home' (any arguments allowed, since the default regex is '.*')</li>
+<li>Spawn particles if player warps to the warp 'normal' using the warp command</li>
+<li>Spawn particles and play sound if player warps to the warp 'special' using the warp command</li>
+</ul>

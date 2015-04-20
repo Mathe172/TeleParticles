@@ -1,0 +1,12 @@
+maxDelay: 50
+ignoreUnknown: true
+commands:
+- command: spawn
+  argRegex: ''
+  spawnParticles: true
+  playSound: true
+
+  
+#Do NOT change this or your config is destroyed!
+version: 2
+#Do NOT change this or your config is destroyed!
